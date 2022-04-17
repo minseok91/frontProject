@@ -1,11 +1,17 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
+import Header from "./components/layout/Header";
+import Main from "./components/layout/Main";
 
 function App() {
-  return (
-    <div className="App">
-      프로젝트 초기화
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <Main />
+            </div>
+        </Router>
+    );
 }
 
 export default App;
