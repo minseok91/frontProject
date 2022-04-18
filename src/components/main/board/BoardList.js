@@ -1,7 +1,7 @@
 function BoardList() {
     return (
         <div className="board-list">
-            게시판 목록
+            <h3>게시판 목록</h3>
         </div>
     );
 }

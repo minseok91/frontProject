@@ -1,7 +1,7 @@
 function Header() {
     return (
         <header>
-            HEADER
+            게시판
         </header>
     );
 }

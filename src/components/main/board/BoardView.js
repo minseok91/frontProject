@@ -1,7 +1,7 @@
 function BoardView() {
     return (
-        <div className="board-list">
-            게시판 조회
+        <div className="board-view">
+            <h3>게시판 조회</h3>
         </div>
     );
 }

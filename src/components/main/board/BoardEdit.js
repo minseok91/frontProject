@@ -1,7 +1,7 @@
 function BoardEdit() {
     return (
-        <div className="board-list">
-            게시판 작성
+        <div className="board-edit">
+            <h3>게시판 작성</h3>
         </div>
     );
 }
