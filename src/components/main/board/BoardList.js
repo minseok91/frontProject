@@ -9,7 +9,7 @@ function BoardList() {
             <h3>게시판 목록</h3>
             <BoardWriteButton />
             {
-                [1,2,3,4,5,6,7,8].map(() => <BoardListRow />)
+                [1,2,3,4,5,6,7,8].map((n) => <BoardListRow key={n} />)
             }
             <BoardListPaging />
         </div>
