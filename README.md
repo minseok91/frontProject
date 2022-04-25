@@ -1,3 +1,4 @@
 # 게시판 프론트
 ### HOW TO RUN
-### 프로젝트 root 경로에서 `npm start` 하면 됨
+#### 1. `npm install` (최초 실행 시 또는 package.json 가 변경된 경우)
+#### 2. `npm start`

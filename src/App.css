@@ -1,0 +1,29 @@
+body { background-color: #292a2d; color: #BBB; }
+header { position: fixed; top: 0; left: 0; width: 100%; background-color: #1e1f21; text-align: center; padding: 20px; color: #03c75a; z-index: 50; border-bottom: 1px solid #444; }
+main { padding-top: 80px; }
+main > div { box-sizing: border-box; padding: 0 20px; width: 1280px; margin: auto; }
+main > div > h3 { padding: 16px 10px; border-bottom: 1px solid #666; }
+
+.board-list { position: relative; }
+.board-list .write-button { position: absolute; top: 0; right: 20px; padding: 14px; background-color: #444; color: #BBB; border: none; border-radius: 100px; cursor: pointer; }
+.board-list .write-button:hover { background-color: #666; transition: background-color 0.5s; }
+.board-list .board-list-row { font-size: 14px; padding: 20px; background-color: #444; margin-bottom: 2px; border-radius: 4px; cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.board-list .board-list-row:hover { background-color: #666; transition: background-color 0.5s; }
+.board-list .board-list-paging { text-align: center; padding: 20px 0; }
+.board-list .board-list-paging button { width: 40px; height: 40px; border: none; border-radius: 4px; margin: 0 1px; background-color: #444; color: #BBB; vertical-align: middle; cursor: pointer; }
+.board-list .board-list-paging button.on { background-color: #666; }
+.board-list .board-list-paging button:hover { background-color: #666; transition: background-color 0.5s; }
+
+.board-view { position: relative; }
+.board-view .home-button { position: absolute; top: 10px; right: 20px; padding: 10px 20px; background-color: #07b53b; color: #333; border: none; border-radius: 4px; cursor: pointer; }
+.board-view .home-button:hover { background-color: #03c75a; transition: background-color 0.5s; }
+.board-view > div { background-color: #444; padding: 20px; margin-bottom: 2px; border-radius: 4px; }
+.board-view div.title { font-size: 14px; }
+.board-view div.contents { font-size: 14px; min-height: 400px; }
+
+.board-edit { position: relative; }
+.board-edit .save-button { position: absolute; top: 10px; right: 20px; padding: 10px 20px; background-color: #07b53b; color: #333; border: none; border-radius: 4px; cursor: pointer; }
+.board-edit .save-button:hover { background-color: #03c75a; transition: background-color 0.5s; }
+.board-edit div.title input[type=text],
+.board-edit div.contents textarea { font-size: 14px; width: 100%; background-color: #444; padding: 20px; margin-bottom: 2px; border-radius: 4px; border: none; box-sizing: border-box; outline: none; color: #BBB; }
+.board-edit div.contents textarea { min-height: 400px; resize: none; }
