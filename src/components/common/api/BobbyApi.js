@@ -44,6 +44,25 @@ const MinseokApi = {
             .catch(() => WebUtil.redirectToErrorPage());
     },
 
+    patch: (path, data) => {
+        const url = MinseokApi.backEndUrl;
+        const urlPath = path.startsWith('/') ? path : `/${path}`;
+
+        const headers = {
+            'utkn': CookieUtil.getCookie('utkn'),
+        };
+
+        return axios.patch(`${url}${urlPath}`, data, { headers })
+            .then((resp) => {
+                if (resp.data.status !== 'SUCCESS') {
+                    WebUtil.redirectToErrorPage();
+                }
+
+                return resp.data.data;
+            })
+            .catch(() => WebUtil.redirectToErrorPage());
+    },
+
     delete: (path, params) => {
         const url = MinseokApi.backEndUrl;
         const urlPath = path.startsWith('/') ? path : `/${path}`;
