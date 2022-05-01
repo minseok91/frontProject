@@ -1,7 +1,7 @@
 function Header() {
     return (
         <header>
-            게시판
+            <span onClick={() => window.location.href = '/'}>게시판</span>
         </header>
     );
 }
